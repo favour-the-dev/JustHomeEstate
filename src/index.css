@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+@layer components{
+    .btn{
+        @apply rounded-2xl bg-transparent border border-white p-2 px-4 text-sm whitespace-nowrap
+    }
+}
