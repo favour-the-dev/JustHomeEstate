@@ -30,7 +30,7 @@ function Navbar() {
                 <div>
                     <img src={Logo} alt="" className='cursor-pointer w-32'/>
                 </div>
-                <div className={`flex flex-col lg:flex-row lg:justify-between lg:items-center p-4 lg:p-0 w-full lg:w-3/4 bg-[#1F4B43] lg:bg-transparent absolute lg:static ${isClicked ? 'right-0 top-0 transition-all ease-in-out duration-600': 'top-0 right-[-100%] transition-all ease-in-out duration-600'}`}>
+                <div className={`flex flex-col lg:flex-row lg:justify-between lg:items-center p-4 lg:p-0 w-full lg:w-3/4 bg-[#1F4B43] lg:bg-transparent absolute lg:static ${isClicked ? 'right-0 top-0 transition-all ease-in-out duration-600': 'top-0 right-[-100%] md:right-[-10000px] transition-all ease-in-out duration-600'}`}>
                     <div className="flex flex-col lg:flex-row gap-6 text-base lg:text-sm"> 
                         <NavLink className='flex items-center gap-1'>Home <FaCaretDown /></NavLink>      
                         <NavLink className='flex items-center gap-1'>Listings <FaCaretDown /></NavLink>        
