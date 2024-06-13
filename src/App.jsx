@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div className="overflow-x-hidden h-screen">
+      <div className="h-screen">
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
