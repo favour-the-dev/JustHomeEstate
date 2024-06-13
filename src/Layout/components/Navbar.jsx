@@ -1,4 +1,5 @@
 import Logo from '../../assets/imgs/logo.svg'
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { CiPhone } from "react-icons/ci";
@@ -8,9 +9,26 @@ import { RiHomeLine } from "react-icons/ri";
 import { RiHome2Fill } from "react-icons/ri";
 function Navbar() {
     const [isClicked, setClicked] = useState(false);
+    const [hasScrolled, setHasScrolled] = useState(false);
+    function handleScroll(){
+        console.log('event called')
+        if(window.scrollY > 0){
+            setHasScrolled(true);
+            console.log('scrolled')
+        }else{
+            setHasScrolled(false)
+        }
+    }
+        useEffect(()=>{
+            window.addEventListener("scroll", handleScroll)
+
+            return () =>{
+                window.removeEventListener("scroll", handleScroll);
+            }
+        }, [])
     return ( 
         <>
-            <div className='relative z-50 container mx-auto p-2 text-white flex justify-between items-center'>
+            <div className={`fixed inset-x-0 z-50 container mx-auto p-2 text-white flex justify-between items-center ${hasScrolled ? 'bg-white rounded-full text-black' : ''}`}>
                 <div>
                     <img src={Logo} alt="" className='cursor-pointer w-32'/>
                 </div>
@@ -30,7 +48,7 @@ function Navbar() {
                         </span>
                         <span className='flex gap-2 items-center cursor-pointer'>
                             <CgProfile className='text-3xl'/>
-                            <button className="btn">Add Property</button>
+                            <button className="btn text-xs">Add Property</button>
                         </span>
                     </div>
                 </div>
