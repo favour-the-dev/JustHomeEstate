@@ -1,16 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import stateContext from "../../../context/StateContext";
 import FeaturedDeals from '../components/card';
 import walker from '../../../assets/loaders/1474.gif';
 import axios from "axios";
 function Recommend() {
     const [ loading, setIsLoading] = useState(false);
     const [featuredHome, setFeaturedHome] = useState([]);
+    const {searchStatus} = useContext(stateContext);
     const options = {
         method: 'GET',
         url: 'https://bayut.p.rapidapi.com/properties/list',
         params: {
             locationExternalIDs: '5002,6020',
-            purpose: 'for-rent',
+            purpose: `for-${searchStatus}`,
             hitsPerPage: '3',
             page: '0',
             lang: 'en',
@@ -51,7 +53,7 @@ function Recommend() {
     }
     useEffect(()=>{
         showFeaturedHomes();
-    }, [])
+    }, [searchStatus])
     return ( 
         <>
             <div className="w-full bg-[#F6F8FA] p-4 flex flex-col justify-center items-center">

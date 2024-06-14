@@ -1,9 +1,12 @@
 import homeBg from '../../../assets/imgs/home-bg.jpg';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { CiSearch } from "react-icons/ci";
+import stateContext from '../../../context/StateContext';
 function Hero() {
     const [isActive, setActive] = useState(true);
-    function handleClick(state){
+    const {setSearchStatus} = useContext(stateContext);
+    function handleClick(state, status){
+        setSearchStatus(status.toLowerCase())
         setActive(state);
     }
     return ( 
@@ -15,10 +18,10 @@ function Hero() {
                         <button className='btn uppercase w-fit mx-auto'>Let us Guide your home</button>
                         <h1 className='text-center font-bold text-3xl md:text-5xl md:w-[80%] mx-auto'>Discover a Place where you will love to Live</h1>
                         <div className='flex items-center gap-3 w-1/2 mx-auto justify-center font-semibold capitalize'>
-                            <div onClick={()=>{handleClick(true)}} className={`py-1 cursor-pointer ${isActive ? 'border-b-2 border-primary' : 'border-none'}`}>
+                            <div onClick={(e)=>{handleClick(true, e.target.textContent)}} className={`py-1 cursor-pointer ${isActive ? 'border-b-2 border-primary' : 'border-none'}`}>
                                 Sale
                             </div>
-                            <div onClick={()=>{handleClick(false)}} className={`py-1 cursor-pointer ${!isActive ? 'border-b-2 border-primary' : 'border-none'}`}>
+                            <div onClick={(e)=>{handleClick(false, e.target.textContent)}} className={`py-1 cursor-pointer ${!isActive ? 'border-b-2 border-primary' : 'border-none'}`}>
                                 Rent
                             </div>
                         </div>
