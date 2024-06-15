@@ -8,6 +8,18 @@
     font-weight: 400;
     font-style: normal;
 }
+.displayCard:hover img{
+    opacity: 0.5
+}
+.displayCard img{
+    transition: opacity 0.3s ease;
+}
+.displayCard:hover span{
+    transform: translateY(-10px);
+}
+displayCard span{
+    transition: transform 0.3s ease;
+}
 @layer components{
     .btn{
         @apply rounded-2xl bg-transparent border border-white p-2 px-4 text-sm whitespace-nowrap
