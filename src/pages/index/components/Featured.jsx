@@ -56,7 +56,7 @@ function Recommend() {
     }, [searchStatus])
     return ( 
         <>
-            <div className="w-full bg-[#F6F8FA] p-4 flex flex-col justify-center items-center">
+            <div className="w-full bg-[#F6F8FA] p-6 flex flex-col justify-center items-center">
                 <div>
                     <h2 className="font-bold text-2xl lg:text-4xl capitalize text-center">Homes For You</h2>
                     <p className="text-center text-sm md:text-base capitalize mb-4">based on your view history</p>

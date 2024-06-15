@@ -1,3 +1,4 @@
+import City from './components/City';
 import Recommend from './components/Featured';
 import Hero from './components/Hero';
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
             <div className='h-screen'>
                 <Hero/>
                 <Recommend/>
+                <City/>
             </div>
         </>
     );
