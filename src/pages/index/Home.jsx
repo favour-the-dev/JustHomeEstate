@@ -1,3 +1,5 @@
+import Local from './components/Local';
+import BestProperties from './components/Best';
 import WhyChoose from './components/whyChoose';
 import City from './components/City';
 import Recommend from './components/Featured';
@@ -10,6 +12,8 @@ function Home() {
                 <Recommend/>
                 <City/>
                 <WhyChoose/>
+                <BestProperties/>
+                <Local/>
             </div>
         </>
     );

@@ -14,7 +14,7 @@ function Hero() {
         <>
             <div className="w-full h-full bg-black text-white relative">
                 <img src={homeBg} alt="" className='absolute w-full h-full object-cover opacity-60'/>
-                <motion.div initial={{opacity: 0, y: -100}} animate={{opacity: 1, y:0}} transition={{duration: 0.75}} className='relative  w-full h-full flex flex-col justify-center'>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 0.75}} className='relative  w-full h-full flex flex-col justify-center'>
                     <div className='flex flex-col space-y-4 md:w-3/4 lg:w-1/2 mx-auto p-2 md:p-0'>
                         <button className='btn uppercase w-fit mx-auto'>Let us Guide your home</button>
                         <h1 className='text-center font-bold text-3xl md:text-5xl md:w-[80%] mx-auto'>Discover a Place where you will love to Live</h1>
