@@ -1,3 +1,5 @@
+import Team from './components/Team';
+import Reviews from './components/Reviews';
 import Local from './components/Local';
 import BestProperties from './components/Best';
 import WhyChoose from './components/whyChoose';
@@ -14,6 +16,8 @@ function Home() {
                 <WhyChoose/>
                 <BestProperties/>
                 <Local/>
+                <Reviews/>
+                <Team/>
             </div>
         </>
     );

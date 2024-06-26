@@ -14,12 +14,12 @@ function City() {
                         <h2 className="font-bold text-3xl">Find Properties in These Cities</h2>
                         <p className="text-sm">See the top assets from these locations</p>
                     </motion.div>
-                    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 md:w-[90%] mx-auto">
+                    <div className="w-full grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 md:w-[90%] mx-auto">
                         <motion.div 
                         initial={{opacity: 0, x: -100, scale: 0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
                         transition={{duration: 0.5}} 
-                        className='displayCard relative h-[250px] lg:h-[300px] md:col-span-2 w-full text-white bg-black rounded-md cursor-pointer'>
+                        className='displayCard relative h-[200px] lg:h-[300px] md:col-span-2 w-full text-white bg-black rounded-md cursor-pointer'>
                             <img src={img1} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>NewYork</span>
                         </motion.div>
@@ -27,39 +27,39 @@ function City() {
                         initial={{opacity: 0, y: -100, scale:0.75}} 
                         whileInView={{opacity: 1, y:0, scale: 1}} 
                         transition={{duration: 0.5}}  
-                        className='displayCard h-[250px] lg:h-[300px] relative text-white bg-black rounded-md'>
+                        className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img2} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Chicago</span>
                         </motion.div>
                         <motion.div 
                         initial={{opacity: 0, x: 100, scale:0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
-                        transition={{duration: 0.75}} 
-                        className='displayCard h-[250px] lg:h-[300px] relative text-white bg-black rounded-md'>
+                        transition={{duration: 0.5}} 
+                        className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img3} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Los Angeles</span>
                         </motion.div>
                         <motion.div 
                         initial={{opacity: 0, x: -100, scale:0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
-                        transition={{duration: 0.75}} 
-                        className='displayCard h-[250px] lg:h-[300px] relative text-white bg-black rounded-md'>
+                        transition={{duration: 0.5}} 
+                        className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img4} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>San Fransisco</span>
                         </motion.div>
                         <motion.div 
                         initial={{opacity: 0, y: 50, scale:0.75}} 
                         whileInView={{opacity: 1, y:0, scale: 1}} 
-                        transition={{duration: 0.75}} 
-                        className='displayCard h-[250px] lg:h-[300px] relative text-white bg-black rounded-md'>
+                        transition={{duration: 0.5}} 
+                        className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img5} alt="" className='h-full w-full rounded-md relative  top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Florida</span>
                         </motion.div>
                         <motion.div 
                         initial={{opacity: 0, x: 100, scale:0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
-                        transition={{duration: 0.75}} 
-                        className='displayCard h-[250px] lg:h-[300px] md:col-span-2 w-full relative text-white bg-black rounded-md cursor-pointer'>
+                        transition={{duration: 0.5}} 
+                        className='displayCard h-[200px] lg:h-[300px] md:col-span-2 w-full relative text-white bg-black rounded-md cursor-pointer'>
                             <img src={img6} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75' />
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Miami</span>
                         </motion.div>

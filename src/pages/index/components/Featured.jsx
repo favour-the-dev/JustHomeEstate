@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import stateContext from "../../../context/StateContext";
-import FeaturedDeals from '../components/card';
+import FeaturedDeals from '../components/FeaturedComps/card';
 import walker from '../../../assets/loaders/1474.gif';
 import axios from "axios";
 function Recommend() {
@@ -51,9 +51,9 @@ function Recommend() {
                 console.error(error);
             }
     }
-    useEffect(()=>{
-        showFeaturedHomes();
-    }, [searchStatus])
+    // useEffect(()=>{
+    //     showFeaturedHomes();
+    // }, [searchStatus])
     return ( 
         <>
             <div className="w-full bg-[#F6F8FA] p-6 flex flex-col justify-center items-center">

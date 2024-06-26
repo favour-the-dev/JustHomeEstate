@@ -15,7 +15,7 @@ function Local() {
                     <motion.div 
                     initial={{opacity: 0, y: 100, scaleY: 0.5}}
                     whileInView={{opacity: 1, y:0, scaleY: 1}}
-                    transition={{duration: 0.75}}
+                    transition={{duration: 0.5}}
                     className="bg-white rounded-lg w-fit p-2 lg:p-3 text-black flex items-center gap-2 absolute top-[10%] left-[5%] lg:left-[15%]">
                         <div className="bg-[#F6E6CB] rounded-full p-2 text-md w-fit text-black"><FaPeopleGroup /></div>
                         <div className="flex flex-col gap-1 text-xs">
@@ -32,10 +32,10 @@ function Local() {
                     <div className="md:w-3/4 mx-auto flex flex-col gap-4">
                     <h2 className="text-3xl font-semibold capitalize md:w-[70%] mx-auto text-center lg:text-start lg:w-full lg:mx-0">Local expertise for
                     luxury homes</h2>
-                    <p className="text-xs font-light md:w-[80%] mx-auto lg:w-full lg:mx-0 text-center lg:text-start">At JustHome Real Estate, our deep local expertise and personalized service ensure you find the perfect property. 
+                    <p className="lg:text-xs tracking-wider leading-6 font-light md:w-[80%] mx-auto lg:w-full lg:mx-0 text-center lg:text-start">At JustHome Real Estate, our deep local expertise and personalized service ensure you find the perfect property. 
                     Trust our dedicated team to navigate the vibrant real estate landscape, offering insider knowledge and a commitment to your satisfaction in every transaction. 
                     Let us make your dream home a reality.</p>
-                    <button className="bg-primary text-black md:w-[80%] mx-auto lg:mx-0 lg:w-fit p-2 rounded-lg text-sm capitalize font-semibold">
+                    <button className="bg-primary w-full text-black md:w-[80%] mx-auto lg:mx-0 lg:w-fit p-2 rounded-lg text-sm capitalize font-semibold">
                         learn more →
                     </button>
                     </div>

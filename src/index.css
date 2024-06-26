@@ -24,4 +24,7 @@ displayCard span{
     .btn{
         @apply rounded-2xl bg-transparent border border-white p-2 px-4 text-sm whitespace-nowrap
     }
+    .alternate-btn{
+        @apply rounded-2xl bg-transparent border border-black border-opacity-70 p-2 px-4 text-sm whitespace-nowrap
+    }
 }
