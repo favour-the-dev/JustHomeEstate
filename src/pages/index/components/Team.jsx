@@ -6,7 +6,7 @@ import {motion} from 'framer-motion';
 function Team() {
     return ( 
         <>
-            <div className="p-8 w-full flex flex-col items-center justify-center">
+            <div className="px-8 py-12 w-full flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center gap-4 p-4">
                     <div className="flex flex-col gap-4">
                         <motion.div 
@@ -18,7 +18,7 @@ function Team() {
                             <p className="text-sm">These are the people that made it all happen</p>
                         </motion.div>
 
-                        <div className="flex flex-col lg:flex-row items-center gap-4 lg:justify-between p-4">
+                        <div className="flex flex-col md:flex-row items-center gap-4 md:justify-between p-4">
                             <motion.div 
                             initial={{opacity: 0, x: -25}} 
                             whileInView={{opacity: 1, x: 0}} 

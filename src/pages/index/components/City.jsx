@@ -16,33 +16,41 @@ function City() {
                     </motion.div>
                     <div className="w-full grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 md:w-[90%] mx-auto">
                         <motion.div 
-                        initial={{opacity: 0, x: -100, scale: 0.75}} 
+                        initial={{opacity: 0, x: -50, scale: 0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
-                        transition={{duration: 0.5}} 
+                        transition={{duration: 0.25}}
+                        whileHover={{scale: 1.01,
+                        transition: { duration: 0.25 },}} 
                         className='displayCard relative h-[200px] lg:h-[300px] md:col-span-2 w-full text-white bg-black rounded-md cursor-pointer'>
                             <img src={img1} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>NewYork</span>
                         </motion.div>
                         <motion.div 
-                        initial={{opacity: 0, y: -100, scale:0.75}} 
+                        initial={{opacity: 0, y: -50, scale:0.75}} 
                         whileInView={{opacity: 1, y:0, scale: 1}} 
-                        transition={{duration: 0.5}}  
+                        transition={{duration: 0.3}}  
+                        whileHover={{scale: 1.01,
+                        transition: { duration: 0.25 },}} 
                         className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img2} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Chicago</span>
                         </motion.div>
                         <motion.div 
-                        initial={{opacity: 0, x: 100, scale:0.75}} 
+                        initial={{opacity: 0, x: 50, scale:0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
-                        transition={{duration: 0.5}} 
+                        transition={{duration: 0.35}} 
+                        whileHover={{scale: 1.01,
+                        transition: { duration: 0.25 },}} 
                         className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img3} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Los Angeles</span>
                         </motion.div>
                         <motion.div 
-                        initial={{opacity: 0, x: -100, scale:0.75}} 
+                        initial={{opacity: 0, x: -50, scale:0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
-                        transition={{duration: 0.5}} 
+                        transition={{duration: 0.4}} 
+                        whileHover={{scale: 1.01,
+                        transition: { duration: 0.25 },}} 
                         className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img4} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>San Fransisco</span>
@@ -50,15 +58,19 @@ function City() {
                         <motion.div 
                         initial={{opacity: 0, y: 50, scale:0.75}} 
                         whileInView={{opacity: 1, y:0, scale: 1}} 
-                        transition={{duration: 0.5}} 
+                        transition={{duration: 0.45}} 
+                        whileHover={{scale: 1.01,
+                        transition: { duration: 0.25 },}} 
                         className='displayCard h-[200px] lg:h-[300px] relative text-white bg-black rounded-md'>
                             <img src={img5} alt="" className='h-full w-full rounded-md relative  top-0 opacity-75 cursor-pointer'/>
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Florida</span>
                         </motion.div>
                         <motion.div 
-                        initial={{opacity: 0, x: 100, scale:0.75}} 
+                        initial={{opacity: 0, x: 50, scale:0.75}} 
                         whileInView={{opacity: 1, x:0, scale: 1}} 
                         transition={{duration: 0.5}} 
+                        whileHover={{scale: 1.01,
+                        transition: { duration: 0.25 },}} 
                         className='displayCard h-[200px] lg:h-[300px] md:col-span-2 w-full relative text-white bg-black rounded-md cursor-pointer'>
                             <img src={img6} alt="" className='h-full w-full rounded-md absolute top-0 opacity-75' />
                             <span className='absolute bottom-0 right-1 z-10 text-2xl font-semibold'>Miami</span>

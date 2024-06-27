@@ -14,7 +14,7 @@ function WhyChoose() {
                         </h2>
                         <h3 className="text-sm">Reasons why You should use justHome</h3>
                     </motion.div>
-                    <div className="flex flex-col gap-8 md:gap-3 md:flex-row items-center justify-between p-3">
+                    <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-3 lg:flex lg:flex-row items-center justify-between p-3">
                         <motion.div initial={{opacity: 0, x:-100}} whileInView={{opacity: 1, x: 0}} transition={{duration: 0.5}} className="flex flex-col items-center justify-center">
                             <TbHomeSearch className="text-5xl"/>
                             <h3 className="font-semibold text-sm">Find your future Home</h3>

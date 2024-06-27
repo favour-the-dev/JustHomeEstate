@@ -41,14 +41,14 @@ function BestProperties() {
                         <motion.div 
                         initial={{opacity: 0, y: -100, scale: 0.5 }} 
                         whileInView={{opacity: 1, y: 0, scale: 1}} 
-                        transition={{duration: 0.5}} 
+                        transition={{duration: 0.25}} 
                         className="md:col-span-2 md:row-span-full">
                             <img src={featured} alt="" className=""/>
                         </motion.div>
                         <motion.div 
                         initial={{opacity: 0, x: 100, scale: 0.5 }} 
                         whileInView={{opacity: 1, x: 0, scale: 1}} 
-                        transition={{duration: 0.5}} 
+                        transition={{duration: 0.25}} 
                         className="lg:col-span-2 relative overflow-hidden rounded-md">
                             <div onClick={()=>{Previous()}} className="backdrop-blur-md p-3 rounded-full w-fit absolute top-[50%] left-1 hover:p-4 hover:shadow-lg transition-shadow duration-200 ease-in-out"><GrPrevious /></div>
                             <div className="flex items-center justify-center w-fit max-h-full">
@@ -59,7 +59,7 @@ function BestProperties() {
                         <motion.div 
                         initial={{opacity: 0, y: 50, scale: 0.5 }} 
                         whileInView={{opacity: 1, y: 0, scale: 1}} 
-                        transition={{duration: 0.75}} 
+                        transition={{duration: 0.5}} 
                         className="rounded-md relative md:w-[250px] md:h-[180px]">
                             {/* playbutton */}
                             <div className="w-full flex flex-col items-center justify-center absolute top-[30%] z-20">
