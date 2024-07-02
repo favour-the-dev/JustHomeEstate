@@ -51,9 +51,9 @@ function Recommend() {
                 console.error(error);
             }
     }
-    useEffect(()=>{
-        showFeaturedHomes();
-    }, [searchStatus])
+    // useEffect(()=>{
+    //     showFeaturedHomes();
+    // }, [searchStatus])
     return ( 
         <>
             <div className="w-full bg-[#F6F8FA] p-6 flex flex-col justify-center items-center">
