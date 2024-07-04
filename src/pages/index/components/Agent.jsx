@@ -9,7 +9,7 @@ function Agent() {
                 whileInView={{opacity: 1, y: 0}} 
                 transition={{duration: 0.35}}
                 className="flex flex-col items-center justify-center gap-2">
-                    <h3 className="text-3xl font-bold text-center lg:text-start">Become a Real Estate Agent</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-center lg:text-start">Become a Real Estate Agent</h3>
                     <p className="text-sm text-center">We only work with the best companies around the globe</p>
                 </motion.div>
                 <motion.button 

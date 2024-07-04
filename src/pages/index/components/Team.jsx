@@ -6,7 +6,7 @@ import {motion} from 'framer-motion';
 function Team() {
     return ( 
         <>
-            <div className="px-8 py-12 w-full flex flex-col items-center justify-center">
+            <div className="px-4 md:px-8 py-12 w-full flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center gap-4 p-4">
                     <div className="flex flex-col gap-4">
                         <motion.div 
@@ -14,7 +14,7 @@ function Team() {
                         whileInView={{opacity: 1, y: 0}} 
                         transition={{duration: 0.45}} 
                         className="flex flex-col gap-2 items-center justify-center">
-                            <h2 className="text-3xl font-bold">Meet Our Team Of Experts</h2>
+                            <h2 className="text-2xl md:text-3xl text-center md:text-start font-bold">Meet Our Team Of Experts</h2>
                             <p className="text-sm">These are the people that made it all happen</p>
                         </motion.div>
 
@@ -63,7 +63,7 @@ function Team() {
                         whileInView={{opacity: 1, y: 0}} 
                         transition={{duration: 0.45}} 
                         className="flex flex-col gap-2 items-center justify-center">
-                            <h2 className="text-3xl font-bold">Popular Real Estate Markets</h2>
+                            <h2 className="text-2xl md:text-3xl text-center md:text-start font-bold">Popular Real Estate Markets</h2>
                             <p className="text-sm">See our most popular real estate markets</p>
                         </motion.div>
 

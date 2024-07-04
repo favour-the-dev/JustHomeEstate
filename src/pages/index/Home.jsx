@@ -9,6 +9,7 @@ import City from './components/City';
 import Recommend from './components/Featured';
 import Hero from './components/Hero';
 import Faq from './components/FAQ';
+import Footer from '../../Layout/components/Footer';
 function Home() {
     return ( 
         <>
@@ -24,6 +25,7 @@ function Home() {
                 <News/>
                 <Agent/>
                 <Faq/>
+                <Footer/>
             </div>
         </>
     );

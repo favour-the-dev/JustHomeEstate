@@ -15,7 +15,7 @@ function News() {
                     whileInView={{opacity: 1, y: 0}} 
                     transition={{duration: 0.45}} 
                     className="flex flex-col gap-2 items-center justify-center">
-                        <h2 className='text-3xl font-bold'>Recent Articles & News</h2>
+                        <h2 className='text-2xl md:text-3xl font-bold'>Recent Articles & News</h2>
                         <p className='text-sm capitalize text-center'>check out the latest news and articles about real estate.</p>
                     </motion.div>
                     <div className='flex flex-col gap-6 md:flex-row flex-wrap items-center md:justify-around lg:justify-between'>

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
-import Home from "./pages/index/Home"
-import Navbar from "./Layout/components/Navbar"
+import Home from "./pages/index/Home";
+import Navbar from "./Layout/components/Navbar";
 import {StateProvider} from './context/StateContext';
 function App() {
 

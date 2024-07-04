@@ -11,7 +11,7 @@ function City() {
             <div className="w-full flex flex-col justify-center items-center p-6 mt-4 overflow-hidden">
                 <div className="flex flex-col gap-4">
                     <motion.div className="text-center">
-                        <h2 className="font-bold text-3xl">Find Properties in These Cities</h2>
+                        <h2 className="font-bold text-2xl md:text-3xl">Find Properties in These Cities</h2>
                         <p className="text-sm">See the top assets from these locations</p>
                     </motion.div>
                     <div className="w-full grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 md:w-[90%] mx-auto">

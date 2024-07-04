@@ -13,13 +13,13 @@ function Faq() {
         <>
         <div className="flex items-center justify-center w-full p-8">
             {/* bg-[#F9F9F9] */}
-            <div className="md:w-[35%] flex flex-col gap-2">
+            <div className="lg:w-[35%] flex flex-col gap-2">
                 <motion.div 
                 initial={{opacity: 0, y: -40}} 
                 whileInView={{opacity: 1, y: 0}} 
                 transition={{duration: 0.35}}
                 className="flex items-center justify-center flex-col">
-                    <h2 className="text-3xl font-bold">Have more Questions?</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold text-center md:text-start">Have more Questions?</h2>
                     <p className="text-sm hidden">see our answers to our most frequently asked Questions.</p>
                 </motion.div>
                 <div className="flex flex-col gap-2">

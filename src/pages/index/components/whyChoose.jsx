@@ -9,7 +9,7 @@ function WhyChoose() {
             <div className="p-6 flex flex-col justify-center items-center bg-primary text-black md:min-h-[50dvh]">
                 <div className="flex flex-col gap-6">
                     <motion.div initial={{opacity: 0, y:-10}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.75}} className="text-center">
-                        <h2 className="font-semibold text-3xl">
+                        <h2 className="font-semibold text-2xl md:text-3xl">
                         Why Choose Us
                         </h2>
                         <h3 className="text-sm">Reasons why You should use justHome</h3>

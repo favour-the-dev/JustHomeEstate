@@ -30,9 +30,9 @@ function Local() {
                 transition={{duration: 0.5}}
                 className="lg:w-1/2">
                     <div className="md:w-3/4 mx-auto flex flex-col gap-4">
-                    <h2 className="text-3xl font-semibold capitalize md:w-[70%] mx-auto text-center lg:text-start lg:w-full lg:mx-0">Local expertise for
+                    <h2 className="text-2xl md:text-3xl font-semibold capitalize md:w-[70%] mx-auto text-center lg:text-start lg:w-full lg:mx-0">Local expertise for
                     luxury homes</h2>
-                    <p className="lg:text-xs tracking-wider leading-6 font-light md:w-[80%] mx-auto lg:w-full lg:mx-0 text-center lg:text-start">At JustHome Real Estate, our deep local expertise and personalized service ensure you find the perfect property. 
+                    <p className="text-sm lg:text-xs tracking-wider leading-6 font-light md:w-[80%] mx-auto lg:w-full lg:mx-0 text-center lg:text-start">At JustHome Real Estate, our deep local expertise and personalized service ensure you find the perfect property. 
                     Trust our dedicated team to navigate the vibrant real estate landscape, offering insider knowledge and a commitment to your satisfaction in every transaction. 
                     Let us make your dream home a reality.</p>
                     <button className="bg-primary w-full text-black md:w-[80%] mx-auto lg:mx-0 lg:w-fit p-2 rounded-lg text-sm capitalize font-semibold">

@@ -34,7 +34,7 @@ function BestProperties() {
             <div className="bg-black p-8 text-white flex flex-col items-center justify-center">
                 <div className="flex flex-col gap-4">
                     <div className="p-2 flex flex-col items-center justify-center gap-2">
-                        <h2 className="font-semibold text-3xl">Best Properties</h2>
+                        <h2 className="font-semibold text-2xl md:text-3xl">Best Properties</h2>
                         <h3 className="text-sm">See Our Best Homes below</h3>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:grid-rows-2 gap-4 md:w-[80%] mx-auto">
