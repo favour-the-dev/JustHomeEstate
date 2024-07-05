@@ -4,9 +4,8 @@ import FeaturedDeals from '../components/FeaturedComps/card';
 import walker from '../../../assets/loaders/1474.gif';
 import axios from "axios";
 function Recommend() {
-    const [ loading, setIsLoading] = useState(false);
     const [featuredHome, setFeaturedHome] = useState([]);
-    const {searchStatus} = useContext(stateContext);
+    const {searchStatus, loading, setIsLoading} = useContext(stateContext);
     const options = {
         method: 'GET',
         url: 'https://bayut.p.rapidapi.com/properties/list',
